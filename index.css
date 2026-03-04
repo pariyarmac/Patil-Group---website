@@ -472,3 +472,194 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ---- VALUES CIRCULAR LOOP ---- */
+.circular-container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-circle {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 10px 40px rgba(138, 57, 59, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  border: 4px solid #fff;
+}
+
+.rotating-ring {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  animation: rotateRing 30s linear infinite;
+  z-index: 10;
+}
+
+.value-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  transform-origin: 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Positioning items around the circle (120deg apart) */
+.item-1 {
+  transform: translate(-50%, -50%) rotate(0deg) translateX(190px);
+}
+
+.item-2 {
+  transform: translate(-50%, -50%) rotate(120deg) translateX(190px);
+}
+
+.item-3 {
+  transform: translate(-50%, -50%) rotate(240deg) translateX(190px);
+}
+
+/* Counter-animation to keep content upright */
+.item-1 .value-content {
+  animation: counterRotate 30s linear infinite;
+}
+
+.item-2 .value-content {
+  animation: counterRotate120 30s linear infinite;
+}
+
+.item-3 .value-content {
+  animation: counterRotate240 30s linear infinite;
+}
+
+.value-dot {
+  width: 14px;
+  height: 14px;
+  background: #F2913F;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(242, 145, 63, 0.4);
+}
+
+.value-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.value-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #8A393B;
+  background: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.value-text {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.static-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed rgba(138, 57, 59, 0.2);
+}
+
+.static-circle.outer {
+  width: 380px;
+  height: 380px;
+}
+
+.static-circle.inner {
+  width: 280px;
+  height: 280px;
+}
+
+@keyframes rotateRing {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Helper keyframes for phased rotations */
+@keyframes counterRotate120 {
+  from {
+    transform: rotate(-120deg);
+  }
+
+  to {
+    transform: rotate(-480deg);
+  }
+}
+
+@keyframes counterRotate240 {
+  from {
+    transform: rotate(-240deg);
+  }
+
+  to {
+    transform: rotate(-600deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .circular-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .rotating-ring,
+  .static-circle.outer {
+    width: 250px;
+    height: 250px;
+  }
+
+  .item-1 {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(125px);
+  }
+
+  .item-2 {
+    transform: translate(-50%, -50%) rotate(120deg) translateX(125px);
+  }
+
+  .item-3 {
+    transform: translate(-50%, -50%) rotate(240deg) translateX(125px);
+  }
+
+  .value-text {
+    font-size: 0.9rem;
+  }
+}
