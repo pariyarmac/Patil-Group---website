@@ -663,3 +663,175 @@ html {
     font-size: 0.9rem;
   }
 }
+
+/* ---- HALF-CIRCLE BUSINESS PRINCIPLES (About Page) ---- */
+.half-circular-container {
+  position: relative;
+  width: 500px;
+  height: 280px;
+  display: flex;
+  align-items: flex-end;
+  /* Align to the bottom of the semi-circle */
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.half-center-content {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 100px 100px 0 0;
+  box-shadow: 0 -10px 40px rgba(138, 57, 59, 0.1);
+  z-index: 30;
+  border: 1px solid rgba(138, 57, 59, 0.1);
+  border-bottom: none;
+}
+
+.half-rotating-ring {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  bottom: -220px;
+  /* Center of rotation at the bottom edge */
+  border-radius: 50%;
+  animation: rotateHalfRing 20s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
+.p-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  transform-origin: 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Position along the top arc (180deg range) */
+.p-1 {
+  transform: translate(-50%, -50%) rotate(-60deg) translateY(-220px);
+}
+
+.p-2 {
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-220px);
+}
+
+.p-3 {
+  transform: translate(-50%, -50%) rotate(60deg) translateY(-220px);
+}
+
+/* Keep text upright - counter both the arc position and the wiggle */
+.p-1 .p-content {
+  transform: rotate(60deg);
+}
+
+.p-2 .p-content {
+  transform: rotate(0deg);
+}
+
+.p-3 .p-content {
+  transform: rotate(-60deg);
+}
+
+.half-rotating-ring .p-content {
+  animation: counterWiggle 20s ease-in-out infinite alternate;
+}
+
+.p-dot {
+  width: 12px;
+  height: 12px;
+  background: #F2913F;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(242, 145, 63, 0.5);
+}
+
+.p-content {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(138, 57, 59, 0.1);
+  text-align: center;
+}
+
+.p-text {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #8A393B;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.half-static-arc {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  bottom: -220px;
+  border-radius: 50%;
+  border: 2px dashed rgba(242, 145, 63, 0.2);
+  z-index: 5;
+}
+
+@keyframes rotateHalfRing {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes counterWiggle {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .half-circular-container {
+    width: 340px;
+    height: 200px;
+  }
+
+  .half-rotating-ring,
+  .half-static-arc {
+    width: 300px;
+    height: 300px;
+    bottom: -150px;
+  }
+
+  .p-1 {
+    transform: translate(-50%, -50%) rotate(-60deg) translateY(-150px);
+  }
+
+  .p-2 {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-150px);
+  }
+
+  .p-3 {
+    transform: translate(-50%, -50%) rotate(60deg) translateY(-150px);
+  }
+
+  .p-text {
+    font-size: 0.75rem;
+  }
+
+  .p-content {
+    padding: 6px 10px;
+  }
+}
