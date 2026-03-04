@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patil Group - Delivering Track Solutions | Railway Infrastructure</title>
+  <meta name="description"
+    content="Trusted leader in railway infrastructure, delivering high-quality track solutions for urban and interurban transport. Made in India with over 50 years of expertise." />
+  <link rel="icon" type="image/png" href="https://patilgroup.com/pg.png" />
+
+  <!-- Tailwind CSS (to replicate utility classes used on live site) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css?v=2" />
+</head>
+
+<body class="font-sans" style="font-family: 'Inter', sans-serif;">
+
+  <!-- ============================================================
+     NAVBAR — Floating Pill (glassmorphism, hide/show on scroll)
+     ============================================================ -->
+  <!-- Outer wrapper: full-width, transparent, only for positioning -->
+  <div id="navbar-wrapper" class="fixed top-0 left-0 w-full z-[9999] px-4 sm:px-6 lg:px-10 pt-4 pointer-events-none">
+
+    <!-- Inner pill: the actual glassy bar -->
+    <nav id="navbar"
+      class="nav-pill pointer-events-auto mx-auto max-w-[1380px] rounded-full px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[66px] transition-all duration-500">
+
+      <!-- Logo -->
+      <a aria-label="Patil Group Home" href="index.html">
+        <img src="https://patilgroup.com/pg.png" alt="Patil Group Logo" width="120" height="60"
+          class="h-10 sm:h-12 w-auto cursor-pointer" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden lg:flex items-center gap-5 xl:gap-7">
+
+        <!-- Know us dropdown -->
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1">
+            Know us
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:rotate-180">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-52 rounded-2xl py-2 opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="about.html" class="dropdown-item">About</a>
+            <a href="our-vision.html" class="dropdown-item">Our Values</a>
+            <a href="legacy.html" class="dropdown-item">Our Legacy</a>
+            <a href="management.html" class="dropdown-item">Management</a>
+            <a href="our-resources.html" class="dropdown-item">Our Resources</a>
+            <a href="our-presence.html" class="dropdown-item">Our Presence</a>
+            <a href="sustainability.html" class="dropdown-item">Sustainability</a>
+            <a href="our-clientele.html" class="dropdown-item">Our Clientele</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="projects.html">Projects</a>
+
+        <!-- Systems dropdown -->
+        <div class="relative group">
+          <a class="nav-link flex items-center gap-1" href="systems.html">
+            Systems
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:rotate-180">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </a>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-52 rounded-2xl py-2 opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="ballastless-track-urban-metro.html" class="dropdown-item">Ballastless Track</a>
+            <a href="flash-butt-welding-of-rails.html" class="dropdown-item">Flash Butt Welding</a>
+            <a href="patil-rheda-system.html" class="dropdown-item">Patil RHEDA System</a>
+            <a href="precast-plinth.html" class="dropdown-item">Precast Plinth</a>
+          </div>
+        </div>
+
+        <!-- Products dropdown -->
+        <div class="relative group">
+          <a class="nav-link flex items-center gap-1" href="products.html">
+            Products
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:rotate-180">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </a>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-52 rounded-2xl py-2 opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="sleepers.html" class="dropdown-item">Sleepers</a>
+            <a href="fasteners.html" class="dropdown-item">Fasteners</a>
+            <a href="wires.html" class="dropdown-item">Wires</a>
+            <a href="inserts.html" class="dropdown-item">Inserts</a>
+            <a href="precast.html" class="dropdown-item">Precast</a>
+            <a href="safety.html" class="dropdown-item">Track Safety</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="cme.html">CME</a>
+        <a class="nav-link" href="research-and-development.html">R&amp;D</a>
+        <a class="nav-link" href="news.html">News &amp; Events</a>
+        <a class="nav-link" href="apnatech.html">ApnaTech</a>
+      </div>
+
+      <!-- Right side -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a class="nav-link" href="careers.html">Careers</a>
+        <a class="bg-[#F2913F] text-white px-5 py-2 rounded-full hover:bg-[#D97706] transition-all duration-300 font-medium text-sm"
+          href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-btn" aria-label="Toggle mobile menu"
+          class="p-2 rounded-full transition-all duration-300 hover:bg-white/10 text-white">
+          <div class="w-6 h-5 flex flex-col justify-between">
+            <div class="w-full h-0.5 bg-current rounded-full"></div>
+            <div class="w-full h-0.5 bg-current rounded-full"></div>
+            <div class="w-full h-0.5 bg-current rounded-full"></div>
+          </div>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- Mobile slide-out menu (full-screen, outside pill) -->
+  <div id="mobile-menu"
+    class="lg:hidden fixed top-0 right-0 bottom-0 w-full bg-white z-[10000] translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto">
+    <div class="flex items-center justify-end px-6 py-6">
+      <button id="mobile-close-btn" aria-label="Close menu"
+        class="p-2 text-black hover:text-amber-500 transition-colors duration-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="px-6 space-y-1 mt-2">
+      <a href="index.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Home</a>
+      <a href="about.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">About</a>
+      <a href="products.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Products</a>
+      <a href="systems.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Systems</a>
+      <a href="projects.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Projects</a>
+      <a href="cme.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">CME</a>
+      <a href="research-and-development.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">R&amp;D</a>
+      <a href="news.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">News &amp;
+        Events</a>
+      <a href="sustainability.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Sustainability</a>
+      <a href="careers.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Careers</a>
+      <a href="contact.html" class="block py-4 text-black text-lg font-medium hover:text-[#F2913F]">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+  <main>
+    <div class="pt-[90px] bg-white">
+      <div class="bg-white">
+        <section class="bg-white overflow-hidden pt-4 sm:pt-4 md:pt-4 pb-4 sm:pb-6 md:pb-8">
+          <div class="flex items-center justify-center w-full">
+            <div class="hidden sm:block flex-1 min-w-0 h-40 sm:h-48 md:h-56 relative animate-fade-in-left"
+              style="-webkit-mask-image:linear-gradient(to left, transparent 10%, black 100%);mask-image:linear-gradient(to left, transparent 10%, black 100%)">
+              <img alt="Rail track left" decoding="async" data-nimg="fill"
+                class="object-cover object-right scale-x-[-1]"
+                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                src="https://patilgroup.com/trackkkk.png" />
+            </div>
+            <h1
+              class="flex-shrink-0 text-[#8A393B] font-extrabold leading-tight text-center px-4 sm:px-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl whitespace-normal sm:whitespace-nowrap break-words max-w-[90vw] animate-fade-in-left">
+              Through the tracks of time</h1>
+            <div class="hidden sm:block flex-1 min-w-0 h-40 sm:h-48 md:h-56 relative animate-fade-in-left"
+              style="-webkit-mask-image:linear-gradient(to right, transparent 10%, black 100%);mask-image:linear-gradient(to right, transparent 10%, black 100%)">
+              <img alt="Rail track right" decoding="async" data-nimg="fill" class="object-cover object-left"
+                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                src="https://patilgroup.com/trackkkk.png" />
+            </div>
+          </div>
+          <section class="bg-white py-4 sm:py-5 md:py-6 mt-6 sm:-mt-14 md:-mt-16 relative z-10">
+            <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row gap-6">
+              <div
+                class="rounded-2xl border border-gray-200/50 bg-white/40 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.06)] px-3 sm:px-8 py-5 sm:py-8 text-center flex-1 flex items-center justify-center">
+                <p class="text-[#F2913F] font-bold text-base sm:text-lg md:text-xl xl:text-2xl">We began in the 1960s
+                  with a single
+                  concrete sleeper plant.</p>
+              </div>
+              <div
+                class="rounded-2xl border border-gray-200 bg-[#F7F6F4] shadow-sm px-3 sm:px-8 py-5 sm:py-8 text-center flex-[2] flex items-center justify-center">
+                <p class="text-[#8A393B] font-semibold text-lg sm:text-2xl md:text-3xl leading-snug">Today, we supply
+                  track components to railways and<br class="hidden sm:block" /> metros across India.</p>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white py-8 sm:py-10 md:py-12 relative fade-in-section" data-delay="0.1"
+            data-duration="0.9">
+            <div class="absolute hidden lg:block reveal-line-left gradient-line-ltr gradient-line-md"
+              style="height:28px;left:0px;top:50%;transform:translateY(-50%)"></div>
+            <div class="absolute hidden lg:block reveal-line-right gradient-line-rtl gradient-line-md"
+              style="height:28px;right:0px;top:50%;transform:translateY(-50%)"></div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+              <div class="text-center mb-8 fade-heading" data-delay="0.15" data-duration="0.9">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold whitespace-normal break-words"><span
+                    class="text-[#8A393B]">Our Business Decision - </span><span class="text-[#F2913F]">Making
+                    Principles</span></h2>
+              </div>
+              <div class="space-y-3 sm:space-y-4 max-w-md mx-auto stagger-children" data-stagger="0.15"
+                data-duration="0.7">
+                <div class="bg-[#8A393B] text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl shadow-lg stagger-item">
+                  <h3 class="text-base sm:text-lg font-bold text-center">Country <span class="text-[#F2913F]">1<sup
+                        class="fluid-small">st</sup></span></h3>
+                </div>
+                <div class="bg-[#8A393B] text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl shadow-lg stagger-item">
+                  <h3 class="text-base sm:text-lg font-bold text-center">Customer <span class="text-[#F2913F]">2<sup
+                        class="fluid-small">nd</sup></span></h3>
+                </div>
+                <div class="bg-[#8A393B] text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl shadow-lg stagger-item">
+                  <h3 class="text-base sm:text-lg font-bold text-center">Company &amp; Employees <span
+                      class="text-[#F2913F]">3<sup class="fluid-small">rd</sup></span></h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="philosophy-section" class="py-4 sm:py-6 md:py-8 bg-white relative overflow-hidden">
+            <div class="relative z-10">
+              <div class="hidden md:block">
+                <div class="philosophy-item"></div>
+                <div class="philosophy-item"></div>
+                <div class="philosophy-item"></div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white py-4 sm:py-6 md:py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+              <div class="space-y-10 sm:space-y-12">
+                <div>
+                  <h3 class="text-black text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-left">Innovation keeps
+                    our journey moving</h3>
+                  <div class="h-4 sm:h-6 rounded-full"
+                    style="width:80vw;margin-left:calc(50% - 50vw);background:linear-gradient(90deg, #8A393B 0%, #1E3888 30%, #F2913F 60%, rgba(242, 145, 63, 0) 97.12%)">
+                  </div>
+                </div>
+                <div class="text-right">
+                  <h3 class="text-black text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">refining every detail,
+                    every
+                    decade.</h3>
+                  <div class="h-4 sm:h-6 rounded-full ml-auto"
+                    style="width:80vw;margin-left:calc(50% + 50vw - 60vw);background:linear-gradient(270deg, #8A393B 0%, #1E3888 30%, #F2913F 60%, rgba(242, 145, 63, 0) 97.12%)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-10 sm:py-16 md:py-24 bg-white text-center relative fade-in-section">
+            <div class="absolute inset-0 opacity-90"
+              style="background-image:url(&#x27;/worldmap.png&#x27;);background-repeat:no-repeat;background-position:center;background-size:contain">
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="md:hidden space-y-5">
+                <h2 class="text-3xl font-extrabold text-[#8A393B]">In Service</h2>
+                <p class="text-lg text-[#8A393B] font-semibold"><span class=""><span>0</span></span> sleepers and
+                  counting
+                  used in <span class=""><span>0</span></span> railway zones.</p>
+                <p class="text-lg font-semibold"
+                  style="background:linear-gradient(to right, #8A393B, #F2913F);-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+                  Over four hundred kilo metres delivered each year.</p>
+                <p class="text-base font-medium text-[#8A393B]">Approved across systems</p>
+              </div>
+              <div class="hidden md:block">
+                <h2 class="text-6xl font-extrabold text-[#8A393B]">In Service</h2>
+                <p class="mt-6 text-2xl lg:text-3xl font-semibold text-[#8A393B]"><span class=""><span>0</span></span>
+                  sleepers and counting used in <span class=""><span>0</span></span> railway zones.</p>
+                <p class="mt-2 text-2xl lg:text-3xl font-semibold"
+                  style="background:linear-gradient(to right, #8A393B, #F2913F);-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+                  Over four hundred kilo metres delivered each year.</p>
+                <p class="mt-4 text-xl font-medium text-[#8A393B]">Approved across systems</p>
+              </div>
+            </div>
+          </section>
+          <section class="py-10 sm:py-16 md:py-24 bg-white text-center relative fade-in-section">
+            <div class="md:hidden px-4">
+              <div class="bg-gradient-to-r from-orange-50 to-green-50 rounded-2xl p-6 mx-auto max-w-sm"><img
+                  src="https://patilgroup.com/makeindia.png" alt="Make in India" loading="lazy"
+                  class="h-16 sm:h-24 mx-auto mb-4" />
+                <p class="text-lg sm:text-2xl font-bold text-black leading-tight">Installed across India</p>
+                <div class="h-1.5 mt-3 mx-auto rounded-full"
+                  style="width:120px;background:linear-gradient(to right, #F2913F, #1E3888, #8A393B)"></div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="flex justify-center items-center max-w-7xl mx-auto max-w-full w-auto"><img
+                  src="https://patilgroup.com/indiaflag.png" alt="Indian Flag" loading="lazy"
+                  class="w-[636px] h-96" /><img src="https://patilgroup.com/makeindia.png" alt="Make in India"
+                  loading="lazy" class="h-56 mx-8" /><img src="https://patilgroup.com/indiaflag.png" alt="Indian Flag"
+                  loading="lazy" class="w-[636px] h-96 transform scale-x-[-1]" /></div>
+              <div class="mt-12">
+                <p class="text-5xl font-semibold text-black">Installed across India</p>
+                <div class="h-2 mt-4 mx-auto"
+                  style="width:400px;background:linear-gradient(to right, #F2913F, #1E3888, #8A393B)"></div>
+              </div>
+            </div>
+          </section>
+      </div><!--$--><!--/$-->
+    </div>
+  </main>
+
+  <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+  <!-- ============================================================
+     FOOTER — 3-Column Layout (Design based on User Sketch)
+     ============================================================ -->
+  <footer class="bg-black text-white py-12 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Main Footer Contents -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+
+        <!-- Left Column: Address & Contact -->
+        <div class="text-center md:text-left flex flex-col items-center md:items-start">
+          <h4 class="text-xl font-bold mb-6 text-[#F2913F]">Address</h4>
+          <address class="not-italic text-gray-300 space-y-4 leading-relaxed">
+            <p class="text-lg font-medium text-white max-w-sm mx-auto md:mx-0">
+              6-3-1342/4 Raj Bhavan Rd, Raj Bhavan Quarters Colony, Somajiguda, Hyderabad, Telangana 500082, India
+            </p>
+            <div class="pt-2">
+              <a href="mailto:info@patilgroup.com" class="footer-link block text-sm">info@patilgroup.com</a>
+              <a href="tel:+914039556700" class="footer-link block mt-1">+91 40 3955 6700</a>
+            </div>
+          </address>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-8 justify-center md:justify-start">
+            <a href="https://www.linkedin.com/company/patil-group/" target="_blank" rel="noopener noreferrer"
+              aria-label="Visit Patil Group on LinkedIn" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Column: Quick Links -->
+        <div class="md:px-8 text-center md:text-left">
+          <h4 class="text-xl font-bold mb-6 text-[#F2913F]">Quick Links</h4>
+          <ul class="space-y-4">
+            <li><a class="footer-link" href="about.html">About Us</a></li>
+            <li><a class="footer-link" href="products.html">Products</a></li>
+            <li><a class="footer-link" href="systems.html">Systems</a></li>
+            <li><a class="footer-link" href="projects.html">Projects</a></li>
+            <li><a class="footer-link" href="cme.html">CME</a></li>
+            <li><a class="footer-link" href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Primary Actions -->
+        <div class="flex flex-col gap-4 items-center md:items-end">
+          <a href="contact.html" class="footer-btn btn-primary">
+            Contact Us
+          </a>
+          <a href="whistleblower.html" class="footer-btn btn-secondary">
+            Whistleblower Policy
+          </a>
+          <a href="privacy-policy.html" class="footer-btn btn-secondary">
+            Privacy Policy
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row: Copyright + Back to Top -->
+      <div class="border-t border-white/10 pt-10 relative">
+        <div class="flex flex-col items-center justify-center">
+          <p class="text-gray-500 text-sm text-center leading-loose max-w-2xl">
+            CIN: U60100TG1996PTC023894 | © 2025 Patil Rail Infrastructure Pvt. Ltd. (PRIL) | <span
+              class="text-gray-400">All rights reserved.</span>
+          </p>
+        </div>
+
+        <div class="mt-8 md:mt-0 md:absolute md:right-0 md:bottom-0">
+          <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+            class="bg-[#F2913F] w-14 h-14 rounded-full flex items-center justify-center text-black hover:bg-orange-400 transition-all duration-300 shadow-lg hover:-translate-y-1"
+            aria-label="Scroll to top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <path d="m5 12 7-7 7 7"></path>
+              <path d="M12 19V5"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

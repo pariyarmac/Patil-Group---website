@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patil Group - Delivering Track Solutions | Railway Infrastructure</title>
+  <meta name="description"
+    content="Trusted leader in railway infrastructure, delivering high-quality track solutions for urban and interurban transport. Made in India with over 50 years of expertise." />
+  <link rel="icon" type="image/png" href="https://patilgroup.com/pg.png" />
+
+  <!-- Tailwind CSS (to replicate utility classes used on live site) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="font-sans" style="font-family: 'Inter', sans-serif;">
+
+  <!-- ============================================================
+     NAVBAR — Floating Pill (glassmorphism, hide/show on scroll)
+     ============================================================ -->
+  <!-- Outer wrapper: full-width, transparent, only for positioning -->
+  <div id="navbar-wrapper" class="fixed top-0 left-0 w-full z-[9999] px-4 sm:px-6 lg:px-10 pt-4 pointer-events-none">
+
+    <!-- Inner pill: the actual glassy bar -->
+    <nav id="navbar"
+      class="nav-pill pointer-events-auto mx-auto max-w-[1380px] rounded-full px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[66px] transition-all duration-500">
+
+      <!-- Logo -->
+      <a aria-label="Patil Group Home" href="#">
+        <img src="https://patilgroup.com/pg.png" alt="Patil Group Logo" width="120" height="60"
+          class="h-10 sm:h-12 w-auto cursor-pointer" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden lg:flex items-center gap-5 xl:gap-7">
+
+        <!-- Know us dropdown -->
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1">
+            Know us
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:rotate-180">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-52 rounded-2xl py-2 opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="about.html" class="dropdown-item">About</a>
+            <a href="our-vision.html" class="dropdown-item">Our Values</a>
+            <a href="legacy.html" class="dropdown-item">Our Legacy</a>
+            <a href="management.html" class="dropdown-item">Management</a>
+            <a href="our-resources.html" class="dropdown-item">Our Resources</a>
+            <a href="our-presence.html" class="dropdown-item">Our Presence</a>
+            <a href="sustainability.html" class="dropdown-item">Sustainability</a>
+            <a href="our-clientele.html" class="dropdown-item">Our Clientele</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="projects.html">Projects</a>
+
+        <!-- Systems dropdown -->
+        <div class="relative group">
+          <a class="nav-link flex items-center gap-1" href="systems.html">
+            Systems
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:rotate-180">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </a>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-52 rounded-2xl py-2 opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="ballastless-track-urban-metro.html" class="dropdown-item">Ballastless Track</a>
+            <a href="flash-butt-welding-of-rails.html" class="dropdown-item">Flash Butt Welding</a>
+            <a href="patil-rheda-system.html" class="dropdown-item">Patil RHEDA System</a>
+            <a href="precast-plinth.html" class="dropdown-item">Precast Plinth</a>
+          </div>
+        </div>
+
+        <!-- Products dropdown -->
+        <div class="relative group">
+          <a class="nav-link flex items-center gap-1" href="products.html">
+            Products
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:rotate-180">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </a>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-52 rounded-2xl py-2 opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="sleepers.html" class="dropdown-item">Sleepers</a>
+            <a href="fasteners.html" class="dropdown-item">Fasteners</a>
+            <a href="wires.html" class="dropdown-item">Wires</a>
+            <a href="inserts.html" class="dropdown-item">Inserts</a>
+            <a href="precast.html" class="dropdown-item">Precast</a>
+            <a href="safety.html" class="dropdown-item">Track Safety</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="cme.html">CME</a>
+        <a class="nav-link" href="research-and-development.html">R&amp;D</a>
+        <a class="nav-link" href="news.html">News &amp; Events</a>
+        <a class="nav-link" href="apnatech.html">ApnaTech</a>
+      </div>
+
+      <!-- Right side -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a class="nav-link" href="careers.html">Careers</a>
+        <a class="bg-[#F2913F] text-white px-5 py-2 rounded-full hover:bg-[#D97706] transition-all duration-300 font-medium text-sm"
+          href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-btn" aria-label="Toggle mobile menu"
+          class="p-2 rounded-full transition-all duration-300 hover:bg-white/10 text-white">
+          <div class="w-6 h-5 flex flex-col justify-between">
+            <div class="w-full h-0.5 bg-current rounded-full"></div>
+            <div class="w-full h-0.5 bg-current rounded-full"></div>
+            <div class="w-full h-0.5 bg-current rounded-full"></div>
+          </div>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- Mobile slide-out menu (full-screen, outside pill) -->
+  <div id="mobile-menu"
+    class="lg:hidden fixed top-0 right-0 bottom-0 w-full bg-white z-[10000] translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto">
+    <div class="flex items-center justify-end px-6 py-6">
+      <button id="mobile-close-btn" aria-label="Close menu"
+        class="p-2 text-black hover:text-amber-500 transition-colors duration-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="px-6 space-y-1 mt-2">
+      <a href="#"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Home</a>
+      <a href="about.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">About</a>
+      <a href="products.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Products</a>
+      <a href="systems.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Systems</a>
+      <a href="projects.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Projects</a>
+      <a href="cme.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">CME</a>
+      <a href="research-and-development.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">R&amp;D</a>
+      <a href="news.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">News &amp;
+        Events</a>
+      <a href="sustainability.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Sustainability</a>
+      <a href="careers.html"
+        class="block py-4 border-b border-gray-200 text-black text-lg font-medium hover:text-[#F2913F]">Careers</a>
+      <a href="contact.html"
+        class="block py-4 text-black text-lg font-medium hover:text-[#F2913F]">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+    <main class="pt-[90px] min-h-screen bg-[#F5F4F1] flex items-center justify-center">
+    <div class="text-center px-4">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8A393B] mb-6">Fasteners</h1>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">This page is currently under construction. Please check back later.</p>
+      <a href="index.html" class="mt-8 inline-block bg-[#F2913F] text-white px-6 py-3 rounded-full hover:bg-[#D97706] transition-colors font-medium">Back to Home</a>
+    </div>
+  </main>
+
+  <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+  <!-- ============================================================
+     FOOTER — 3-Column Layout (Design based on User Sketch)
+     ============================================================ -->
+  <footer class="bg-black text-white py-12 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Main Footer Contents -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+
+        <!-- Left Column: Address & Contact -->
+        <div class="text-center md:text-left flex flex-col items-center md:items-start">
+          <h4 class="text-xl font-bold mb-6 text-[#F2913F]">Address</h4>
+          <address class="not-italic text-gray-300 space-y-4 leading-relaxed">
+            <p class="text-lg font-medium text-white max-w-sm mx-auto md:mx-0">
+              6-3-1342/4 Raj Bhavan Rd, Raj Bhavan Quarters Colony, Somajiguda, Hyderabad, Telangana 500082, India
+            </p>
+            <div class="pt-2">
+              <a href="mailto:info@patilgroup.com" class="footer-link block text-sm">info@patilgroup.com</a>
+              <a href="tel:+914039556700" class="footer-link block mt-1">+91 40 3955 6700</a>
+            </div>
+          </address>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-8 justify-center md:justify-start">
+            <a href="https://www.linkedin.com/company/patil-group/" target="_blank" rel="noopener noreferrer"
+              aria-label="Visit Patil Group on LinkedIn" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Column: Quick Links -->
+        <div class="md:px-8 text-center md:text-left">
+          <h4 class="text-xl font-bold mb-6 text-[#F2913F]">Quick Links</h4>
+          <ul class="space-y-4">
+            <li><a class="footer-link" href="about.html">About Us</a></li>
+            <li><a class="footer-link" href="products.html">Products</a></li>
+            <li><a class="footer-link" href="systems.html">Systems</a></li>
+            <li><a class="footer-link" href="projects.html">Projects</a></li>
+            <li><a class="footer-link" href="cme.html">CME</a></li>
+            <li><a class="footer-link" href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Primary Actions -->
+        <div class="flex flex-col gap-4 items-center md:items-end">
+          <a href="contact.html" class="footer-btn btn-primary">
+            Contact Us
+          </a>
+          <a href="whistleblower.html" class="footer-btn btn-secondary">
+            Whistleblower Policy
+          </a>
+          <a href="privacy-policy.html" class="footer-btn btn-secondary">
+            Privacy Policy
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row: Copyright + Back to Top -->
+      <div class="border-t border-white/10 pt-10 relative">
+        <div class="flex flex-col items-center justify-center">
+          <p class="text-gray-500 text-sm text-center leading-loose max-w-2xl">
+            CIN: U60100TG1996PTC023894 | © 2025 Patil Rail Infrastructure Pvt. Ltd. (PRIL) | <span
+              class="text-gray-400">All rights reserved.</span>
+          </p>
+        </div>
+
+        <div class="mt-8 md:mt-0 md:absolute md:right-0 md:bottom-0">
+          <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+            class="bg-[#F2913F] w-14 h-14 rounded-full flex items-center justify-center text-black hover:bg-orange-400 transition-all duration-300 shadow-lg hover:-translate-y-1"
+            aria-label="Scroll to top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <path d="m5 12 7-7 7 7"></path>
+              <path d="M12 19V5"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
